@@ -1,0 +1,26 @@
+Modelo 19: Logit, usando as observações 1-891 (n = 714)
+Observações ausentes ou incompletas foram ignoradas: 177
+Variável dependente: Survived
+Erros padrão baseados na Hessiana
+
+             coeficiente   erro padrão      z       p-valor 
+  ----------------------------------------------------------
+  const       0,353879     0,518202       0,6829   0,4947   
+  Sex         2,62348      0,214524      12,23     2,17e-034 ***
+  Age        -0,0443847    0,00815527    -5,442    5,26e-08  ***
+  Pclass     -1,31740      0,140900      -9,350    8,78e-021 ***
+  SibSp      -0,376119     0,121080      -3,106    0,0019    ***
+
+Média var. dependente   0,406162   D.P. var. dependente    0,491460
+R-quadrado de McFadden  0,339856   R-quadrado ajustado     0,329488
+Log da verossimilhança -318,3597   Critério de Akaike      646,7193
+Critério de Schwarz     669,5737   Critério Hannan-Quinn   655,5458
+
+Número de casos 'corretamente previstos' = 577 (80,8%)
+f(beta'x) na média das variáveis independentes = 0,234
+Teste de razão de verossimilhança: Qui-quadrado(4) = 327,797 [0,0000]
+
+            Previsto
+               0     1
+  Efetivo 0  365    59
+          1   78   212

@@ -1,0 +1,8 @@
+# Registro (log) iniciado em 2014-01-19 01:28
+# Gravação de sessão de comandos (note que, provavelmente, este registro
+# precisará ser editado para ser usado como uma sequência de comandos).
+open "C:\Users\Fernando Teixeira\Dropbox\Kaggle\test.csv"
+dummify Sex
+delete 12
+rename 12 Female
+summary

@@ -1,0 +1,25 @@
+# Registro (log) iniciado em 2014-01-22 20:11
+# Gravação de sessão de comandos (note que, provavelmente, este registro
+# precisará ser editado para ser usado como uma sequência de comandos).
+open "C:\Users\fernando.ormonde\Dropbox\Desafio\dados brutos2.xls" --sheet=3
+# modelo 1
+logit Survived const PclassA PclassB Age SibSp Parch Fare EmbarkedS \
+  EmbarkedC --p-values
+# modelo 2
+logit Survived const PclassA PclassB Age SibSp Parch Fare --p-values
+# modelo 3
+logit Survived const PclassA PclassB Age SibSp Parch EmbarkedS EmbarkedC \
+  --p-values
+# modelo 4
+logit Survived const PclassA PclassB Age SibSp Parch --p-values
+# modelo 5
+logit Survived const PclassA PclassB Age SibSp --p-values
+# modelo 6
+logit Survived const PclassA Age SibSp --p-values
+# modelo 7
+logit Survived const PclassA PclassB Age SibSp Fare --p-values
+# modelo 8
+logit Survived const PclassA PclassB Age SibSp EmbarkedS EmbarkedC \
+  --p-values
+# modelo 9
+logit Survived const PclassA Age SibSp EmbarkedS EmbarkedC --p-values
